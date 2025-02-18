@@ -1,0 +1,32 @@
+{
+    "manufacturers": [
+      {
+        "name": "Bitmain",
+        "models": [
+          {
+            "name": "Antminer S19 Pro",
+            "image": "url_to_image_s19pro.jpg",
+            "description": "Мощный и эффективный майнер для добычи Bitcoin.",
+            "price": "150000"
+          },
+          {
+            "name": "Antminer L7",
+            "image": "url_to_image_l7.jpg",
+            "description": "Майнер для добычи Litecoin и Dogecoin.",
+            "price": "120000"
+          }
+        ]
+      },
+      {
+        "name": "WhatsMiner",
+        "models": [
+          {
+            "name": "M30S++",
+            "image": "url_to_image_m30s++.jpg",
+            "description": "Надежный и производительный майнер.",
+            "price": "130000"
+          }
+        ]
+      }
+    ]
+  }
