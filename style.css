@@ -1,22 +1,27 @@
 body {
     font-family: sans-serif;
     margin: 0;
-    padding: 20px;
-    background-color: #f0f0f0;
+    padding: 15px; /* Уменьшили общий padding body */
+    background-color: #f7f7f7; /* Светло-серый фон */
+    color: #333; /* Темно-серый основной текст */
 }
 
 .container {
     max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Увеличили margin сверху и снизу */
+    background-color: #fff; /* Белый фон контейнера */
+    padding: 25px; /* Увеличили внутренний padding контейнера */
+    border-radius: 12px; /* Более сильное скругление углов контейнера */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* Более заметная, но легкая тень */
+    border: 1px solid #eee; /* Тонкая светлая граница контейнера */
 }
 
 h1 {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 28px; /* Увеличенный размер заголовка */
+    font-weight: bold; /* Жирный шрифт заголовка */
+    color: #222; /* Более темный цвет заголовка */
 }
 
 .banners {
@@ -27,37 +32,44 @@ h1 {
 
 .banner {
     display: block;
-    padding: 15px 20px;
-    background-color: #e0e0e0;
+    padding: 20px 25px; /* Увеличенный padding баннеров */
+    background-color: #f0f0f0; /* Светло-серый фон баннеров, чуть темнее фона body */
     text-align: center;
-    border-radius: 5px;
+    border-radius: 8px; /* Скругление углов баннеров */
     text-decoration: none;
     color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Легкая тень для баннеров */
+    transition: background-color 0.2s ease-in-out; /* Плавный переход фона при наведении */
 }
 
 .banner:hover {
-    background-color: #d0d0d0;
+    background-color: #e0e0e0; /* Более темный фон при наведении */
 }
 
 #manufacturers-filter button {
-    padding: 10px 15px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
+    padding: 10px 18px; /* Увеличенный гориз. padding кнопок фильтра */
+    margin-right: 8px; /* Уменьшенный отступ между кнопками фильтра */
+    border: 1px solid #ddd; /* Светлая граница кнопок фильтра */
+    border-radius: 6px; /* Меньшее скругление углов кнопок фильтра */
+    background-color: #fff; /* Белый фон кнопок фильтра */
+    color: #555; /* Более светлый цвет текста кнопок фильтра */
     cursor: pointer;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Плавные переходы */
 }
 
 #manufacturers-filter button:hover {
-    background-color: #0056b3;
+    background-color: #f0f0f0; /* Фон при наведении */
+    border-color: #ccc; /* Граница при наведении */
+    color: #333; /* Цвет текста при наведении */
 }
 
 .model-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 8px; /* Скругление углов карточек товаров */
     padding: 15px;
     margin-bottom: 15px;
+    background-color: #fff; /* Белый фон карточек товаров */
+    border: none; /* Убрали границу карточек */
+    box-shadow: none; /* Убрали тень карточек */
 }
 
 .model-card img {
@@ -65,72 +77,209 @@ h1 {
     height: auto;
     display: block;
     margin-bottom: 10px;
+    border-radius: 6px; /* Скругление углов изображений товаров */
 }
 
 .model-card h3 {
     margin-top: 0;
     margin-bottom: 5px;
+    font-size: 22px; /* Увеличенный размер заголовков карточек */
 }
 
 .model-card p {
     margin: 0;
-    color: #555;
+    color: #777; /* Более светлый цвет текста описания товаров */
 }
 
-/* Стили для экранов шириной 600px и меньше (мобильные) */
+.back-button span {
+    display: inline-block;
+    padding: 10px 20px; /* Увеличенный padding кнопки "Назад" */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Скругление углов кнопки "Назад" */
+    text-decoration: none;
+    color: #555; /* Более светлый цвет текста кнопки "Назад" */
+    background-color: #fff; /* Белый фон кнопки "Назад" */
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Плавные переходы */
+}
+
+.back-button span:hover {
+    background-color: #f0f0f0; /* Фон при наведении */
+    border-color: #bbb; /* Граница при наведении */
+    color: #333; /* Цвет текста при наведении */
+}
+
+.back-button span::before {
+    content: "<";
+    display: inline-block;
+    margin-right: 6px;
+    color: #777; /* Более светлый цвет стрелочки "Назад" */
+}
+
+
+/* Стили для визуального макета калькулятора */
+.calculator-widget {
+    background-color: #f0f0f0; /* Фон калькулятора - такой же, как фон баннеров */
+    border-radius: 12px; /* Скругление углов, как у контейнера */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Легкая тень, как у баннеров */
+    padding: 20px; /* Внутренний padding */
+    margin-bottom: 20px; /* Отступ снизу */
+    text-align: center; /* Выравнивание текста по центру внутри калькулятора */
+}
+
+.calculator-display {
+    background-color: #fff; /* Фон дисплея - белый */
+    border-radius: 8px; /* Скругление углов дисплея */
+    padding: 15px; /* Padding дисплея */
+    margin-bottom: 15px; /* Отступ снизу от дисплея до кнопок */
+    text-align: right; /* Выравнивание текста в дисплее по правому краю */
+    font-size: 24px; /* Размер шрифта текста на дисплее */
+    font-weight: bold; /* Жирный шрифт на дисплее */
+    color: #333; /* Цвет текста на дисплее */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.03); /* Легкая внутренняя тень */
+}
+
+.calculator-display-text { /* Стили для текста на дисплее (тег span) */
+    display: block; /* Чтобы span занимал всю ширину дисплея */
+    overflow: hidden; /* Скрыть переполнение текста */
+    white-space: nowrap; /* Запретить перенос текста на новую строку */
+    text-overflow: ellipsis; /* Многоточие, если текст не помещается */
+}
+
+.calculator-buttons {
+    display: grid; /* Используем CSS Grid Layout для кнопок */
+    grid-template-columns: repeat(5, 1fr); /* 5 колонок */
+    gap: 10px; /* Отступы между кнопками */
+}
+
+.calculator-row { /* Стили для строк кнопок (пока не нужны) */
+    /* Можно добавить стили для строк, если нужно */
+}
+
+.calculator-button {
+    background-color: #fff; /* Фон кнопок - белый */
+    border: 1px solid #ddd; /* Граница кнопок - светло-серая */
+    border-radius: 8px; /* Скругление углов кнопок */
+    padding: 15px; /* Padding кнопок */
+    text-align: center; /* Выравнивание текста по центру */
+    font-size: 18px; /* Размер шрифта на кнопках */
+    color: #333; /* Цвет текста на кнопках */
+    cursor: pointer; /* Курсор - "рука" */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Легкая тень для эффекта кнопки */
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out; /* Плавные переходы */
+}
+
+.calculator-button:hover {
+    background-color: #f0f0f0; /* Фон при наведении */
+    border-color: #ccc; /* Граница при наведении */
+}
+
+.calculator-button-grey { /* Стили для "серых" кнопок */
+    background-color: #f0f0f0; /* Фон - серый */
+    color: #555; /* Текст - более светлый серый */
+    border-color: #eee; /* Граница - еще более светлая серая */
+}
+
+.calculator-button-grey:hover {
+    background-color: #e0e0e0; /* Фон при наведении */
+    border-color: #ddd; /* Граница при наведении */
+}
+
+.calculator-button-zero { /* Стили для кнопки "0" (ширина) */
+    grid-column: span 2; /* Занимает 2 колонки сетки */
+}
+
+.calculator-button-operator { /* Стили для кнопок операторов */
+    font-weight: bold; /* Жирный шрифт операторов */
+    color: #007bff; /* Цвет операторов - синий */
+}
+
+
+/* Медиа-запрос для мобильных устройств (экраны до 600px шириной) */
 @media (max-width: 600px) {
-    /* Стили, которые будут применяться только на мобильных устройствах */
     body {
-        padding: 10px; /* Уменьшим отступы по краям экрана */
+        padding: 10px; /* Уменьшенный padding body на мобильных */
     }
 
-    .banner img {
-        max-width: 100%; /*  Изображение не будет шире, чем баннер-контейнер */
-        height: auto;    /*  Высота изображения будет масштабироваться автоматически, сохраняя пропорции */
-        display: block;   /*  Убирает возможные отступы снизу от встроенных элементов */
-        margin-bottom: 10px; /* Добавим небольшой отступ снизу изображения от текста баннера */
-    }
-    
     .container {
-        padding: 15px; /* Уменьшим внутренние отступы контейнера */
-        max-width: 100%; /* Контейнер будет занимать всю ширину экрана */
-        border-radius: 0; /* Уберем скругление углов контейнера на мобильных */
-        box-shadow: none; /* Уберем тень контейнера на мобильных */
+        padding: 15px; /* Уменьшенный padding контейнера на мобильных */
+        max-width: 100%; /* Контейнер на всю ширину экрана */
+        border-radius: 0; /* Убрали скругление углов контейнера на мобильных */
+        box-shadow: none; /* Убрали тень контейнера на мобильных */
+        border: none; /* Убрали границу контейнера на мобильных */
+        margin: 0; /* Убрали margin контейнера на мобильных, прижимаем к краям экрана */
     }
 
     h1 {
-        font-size: 24px; /* Уменьшим размер заголовка */
+        font-size: 24px; /* Уменьшенный размер заголовка на мобильных */
         margin-bottom: 15px;
     }
 
     .banners {
-        flex-direction: column; /* Баннеры будут располагаться вертикально */
-        align-items: center; /* Выровняем баннеры по центру */
+        flex-direction: column; /* Баннеры вертикально на мобильных */
+        align-items: center; /* Выравнивание баннеров по центру */
     }
 
     .banner {
-        width: 100%; /* Баннеры будут занимать всю ширину экрана */
-        margin-bottom: 10px; /* Добавим отступ между баннерами */
-        padding: 20px; /* Увеличим внутренний отступ в баннерах */
-        font-size: 18px; /* Увеличим размер шрифта в баннерах */
+        width: 100%; /* Баннеры на всю ширину экрана */
+        margin-bottom: 10px; /* Отступ между баннерами на мобильных */
+        padding: 20px; /* Увеличенный padding баннеров на мобильных */
+        font-size: 18px; /* Увеличенный размер шрифта баннеров на мобильных */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Тень для баннеров на мобильных (можно убрать, если не нравится) */
+    }
+
+    .banner img { /* Стили для изображений баннеров на мобильных */
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 10px;
     }
 
     #manufacturers-filter button {
-        padding: 8px 12px; /* Уменьшим отступы в кнопках фильтра */
-        font-size: 16px; /* Уменьшим размер шрифта в кнопках фильтра */
-        margin-right: 5px; /* Уменьшим отступ между кнопками фильтра */
+        padding: 8px 12px; /* Уменьшенный padding кнопок фильтра на мобильных */
+        font-size: 16px; /* Уменьшенный размер шрифта кнопок фильтра на мобильных */
+        margin-right: 5px; /* Уменьшенный отступ между кнопками фильтра на мобильных */
     }
 
     .model-card {
-        padding: 10px; /* Уменьшим отступы в карточках товаров */
+        padding: 10px; /* Уменьшенный padding карточек товаров на мобильных */
+        border-radius: 0; /* Убрали скругление углов карточек на мобильных */
+        box-shadow: none; /* Убрали тень карточек на мобильных */
+        border: none; /* Убрали границу карточек на мобильных */
+        background-color: #f7f7f7; /* Фон карточек на мобильных - такой же, как фон body, чтобы сливались */
     }
 
     .model-card h3 {
-        font-size: 20px; /* Уменьшим размер заголовка карточки товара */
+        font-size: 20px; /* Уменьшенный размер заголовков карточек на мобильных */
         margin-bottom: 8px;
     }
 
     .model-card p {
-        font-size: 16px; /* Увеличим размер шрифта описания товара */
+        font-size: 16px; /* Увеличенный размер шрифта описания товаров на мобильных */
+    }
+
+    .back-button span { /* Стили для кнопки "Назад" на мобильных */
+        padding: 8px 15px; /* Уменьшенный padding кнопки "Назад" на мобильных */
+        font-size: 16px; /* Уменьшенный размер шрифта кнопки "Назад" на мобильных */
+    }
+
+    .calculator-widget { /* Стили для виджета калькулятора на мобильных */
+        border-radius: 0; /* Убрали скругление углов виджета на мобильных */
+        box-shadow: none; /* Убрали тень виджета на мобильных */
+        padding: 15px; /* Уменьшенный padding виджета на мобильных */
+        margin-bottom: 10px; /* Уменьшенный margin-bottom виджета на мобильных */
+    }
+
+    .calculator-display { /* Стили для дисплея калькулятора на мобильных */
+        font-size: 20px; /* Уменьшенный размер шрифта дисплея на мобильных */
+        padding: 12px; /* Уменьшенный padding дисплея на мобильных */
+    }
+
+    .calculator-button { /* Стили для кнопок калькулятора на мобильных */
+        padding: 12px; /* Уменьшенный padding кнопок калькулятора на мобильных */
+        font-size: 16px; /* Уменьшенный размер шрифта кнопок калькулятора на мобильных */
+    }
+
+    .calculator-button-zero { /* Стили для кнопки "0" калькулятора на мобильных */
+        /* Стили кнопки "0" не меняем на мобильных, оставляем как на десктопе */
     }
 }
