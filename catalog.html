@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог товаров</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container">  <-- Контейнер для всего содержимого страницы -->
         <a href="index.html" class="back-button"> <span style="display: inline-block; padding: 8px 15px; border: 1px solid #ccc; border-radius: 5px; text-decoration: none; color: #333;">
             <span style="margin-right: 5px;">&lt;</span> Главная страница
-        </span>
-        <h1>Каталог товаров</h1>
-        <div id="manufacturers-filter">
-            </div>
-        <div id="models-list">
-            </div>
+        </span></a>  <--  ПРАВИЛЬНО: Ссылка закрыта сразу после кнопки -->
+
+        <h1>Каталог товаров</h1>  <-- Заголовок ТЕПЕРЬ СНАРУЖИ ссылки -->
+        <div id="manufacturers-filter"> <-- Фильтр ТЕПЕРЬ СНАРУЖИ ссылки -->
+        </div>
+        <div id="models-list">  <-- Список товаров ТЕПЕРЬ СНАРУЖИ ссылки -->
+        </div>
     </div>
     <script>
         loadManufacturers(); // Функция для загрузки производителей и моделей из products.json
