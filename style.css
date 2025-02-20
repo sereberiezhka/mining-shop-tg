@@ -225,3 +225,17 @@ h1 {
     text-align: center;
     min-width: 20px; /* Минимальная ширина для центровки цифры 0 */
 }
+
+/* Стили для страницы cart.html */
+.cart-page {
+    padding-top: 20px; /* Отступ сверху для страницы корзины */
+}
+
+.cart-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* ... (можно добавить стили для #cart-total, #checkout-button, и т.д. позже) ... */
