@@ -199,3 +199,29 @@ h1 {
 .model-card button:hover {
     background-color: #0056b3; /* Более темный синий при наведении */
 }
+
+.cart-icon-wrapper {
+    position: absolute; /* Абсолютное позиционирование внутри .container */
+    top: 25px; /* Отступ сверху, как и у заголовка h1 */
+    right: 25px; /* Отступ справа, как и padding контейнера */
+    display: flex; /* Flexbox для выравнивания иконки и счетчика */
+    align-items: center; /* Выравнивание по вертикали по центру */
+}
+
+.cart-icon {
+    width: 30px; /* Размер иконки */
+    height: auto;
+    margin-right: 5px; /* Отступ между иконкой и счетчиком */
+}
+
+.cart-count {
+    display: inline-block; /* Чтобы можно было задать размеры и padding */
+    padding: 4px 8px;
+    background-color: #ff6f61; /* Красный цвет для счетчика */
+    color: white;
+    border-radius: 50%; /* Круглая форма счетчика */
+    font-size: 14px;
+    line-height: 1; /* Убираем межстрочный интервал, чтобы цифра была по центру */
+    text-align: center;
+    min-width: 20px; /* Минимальная ширина для центровки цифры 0 */
+}
