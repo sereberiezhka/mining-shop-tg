@@ -116,84 +116,6 @@ h1 {
 }
 
 
-/* Стили для визуального макета калькулятора */
-.calculator-widget {
-    background-color: #f0f0f0; /* Фон калькулятора - такой же, как фон баннеров */
-    border-radius: 12px; /* Скругление углов, как у контейнера */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Легкая тень, как у баннеров */
-    padding: 20px; /* Внутренний padding */
-    margin-bottom: 20px; /* Отступ снизу */
-    text-align: center; /* Выравнивание текста по центру внутри калькулятора */
-}
-
-.calculator-display {
-    background-color: #fff; /* Фон дисплея - белый */
-    border-radius: 8px; /* Скругление углов дисплея */
-    padding: 15px; /* Padding дисплея */
-    margin-bottom: 15px; /* Отступ снизу от дисплея до кнопок */
-    text-align: right; /* Выравнивание текста в дисплее по правому краю */
-    font-size: 24px; /* Размер шрифта текста на дисплее */
-    font-weight: bold; /* Жирный шрифт на дисплее */
-    color: #333; /* Цвет текста на дисплее */
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.03); /* Легкая внутренняя тень */
-}
-
-.calculator-display-text { /* Стили для текста на дисплее (тег span) */
-    display: block; /* Чтобы span занимал всю ширину дисплея */
-    overflow: hidden; /* Скрыть переполнение текста */
-    white-space: nowrap; /* Запретить перенос текста на новую строку */
-    text-overflow: ellipsis; /* Многоточие, если текст не помещается */
-}
-
-.calculator-buttons {
-    display: grid; /* Используем CSS Grid Layout для кнопок */
-    grid-template-columns: repeat(5, 1fr); /* 5 колонок */
-    gap: 10px; /* Отступы между кнопками */
-}
-
-.calculator-row { /* Стили для строк кнопок (пока не нужны) */
-    /* Можно добавить стили для строк, если нужно */
-}
-
-.calculator-button {
-    background-color: #fff; /* Фон кнопок - белый */
-    border: 1px solid #ddd; /* Граница кнопок - светло-серая */
-    border-radius: 8px; /* Скругление углов кнопок */
-    padding: 15px; /* Padding кнопок */
-    text-align: center; /* Выравнивание текста по центру */
-    font-size: 18px; /* Размер шрифта на кнопках */
-    color: #333; /* Цвет текста на кнопках */
-    cursor: pointer; /* Курсор - "рука" */
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Легкая тень для эффекта кнопки */
-    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out; /* Плавные переходы */
-}
-
-.calculator-button:hover {
-    background-color: #f0f0f0; /* Фон при наведении */
-    border-color: #ccc; /* Граница при наведении */
-}
-
-.calculator-button-grey { /* Стили для "серых" кнопок */
-    background-color: #f0f0f0; /* Фон - серый */
-    color: #555; /* Текст - более светлый серый */
-    border-color: #eee; /* Граница - еще более светлая серая */
-}
-
-.calculator-button-grey:hover {
-    background-color: #e0e0e0; /* Фон при наведении */
-    border-color: #ddd; /* Граница при наведении */
-}
-
-.calculator-button-zero { /* Стили для кнопки "0" (ширина) */
-    grid-column: span 2; /* Занимает 2 колонки сетки */
-}
-
-.calculator-button-operator { /* Стили для кнопок операторов */
-    font-weight: bold; /* Жирный шрифт операторов */
-    color: #007bff; /* Цвет операторов - синий */
-}
-
-
 /* Медиа-запрос для мобильных устройств (экраны до 600px шириной) */
 @media (max-width: 600px) {
     body {
@@ -262,24 +184,5 @@ h1 {
         font-size: 16px; /* Уменьшенный размер шрифта кнопки "Назад" на мобильных */
     }
 
-    .calculator-widget { /* Стили для виджета калькулятора на мобильных */
-        border-radius: 0; /* Убрали скругление углов виджета на мобильных */
-        box-shadow: none; /* Убрали тень виджета на мобильных */
-        padding: 15px; /* Уменьшенный padding виджета на мобильных */
-        margin-bottom: 10px; /* Уменьшенный margin-bottom виджета на мобильных */
-    }
-
-    .calculator-display { /* Стили для дисплея калькулятора на мобильных */
-        font-size: 20px; /* Уменьшенный размер шрифта дисплея на мобильных */
-        padding: 12px; /* Уменьшенный padding дисплея на мобильных */
-    }
-
-    .calculator-button { /* Стили для кнопок калькулятора на мобильных */
-        padding: 12px; /* Уменьшенный padding кнопок калькулятора на мобильных */
-        font-size: 16px; /* Уменьшенный размер шрифта кнопок калькулятора на мобильных */
-    }
-
-    .calculator-button-zero { /* Стили для кнопки "0" калькулятора на мобильных */
-        /* Стили кнопки "0" не меняем на мобильных, оставляем как на десктопе */
-    }
+    
 }
