@@ -58,6 +58,7 @@ function createModelCard(model, manufacturerName) {
     addToCartButton.textContent = 'Добавить в корзину';
     addToCartButton.addEventListener('click', () => {
         addToCart(model); // <--- Вызываем функцию addToCart() из cart.js и передаем ей объект model
+        alert(`Товар "${model.name}" добавлен в корзину!`); // <--- **ДОБАВЬТЕ ЭТУ СТРОКУ!**
     });
     modelCard.appendChild(addToCartButton);
 
