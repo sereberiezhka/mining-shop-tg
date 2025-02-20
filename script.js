@@ -57,8 +57,7 @@ function createModelCard(model, manufacturerName) {
     const addToCartButton = document.createElement('button');
     addToCartButton.textContent = 'Добавить в корзину';
     addToCartButton.addEventListener('click', () => {
-        // **Здесь будет логика добавления в корзину (реализуем позже)**
-        alert(`Товар "${model.name}" добавлен в корзину!`); // Пока просто сообщение
+        addToCart(model); // <--- Вызываем функцию addToCart() из cart.js и передаем ей объект model
     });
     modelCard.appendChild(addToCartButton);
 
