@@ -1,32 +1,177 @@
-{
-    "manufacturers": [
-      {
-        "name": "Bitmain",
-        "models": [
-          {
-            "name": "Antminer S19 Pro",
-            "image": "url_to_image_s19pro.jpg",
-            "description": "Мощный и эффективный майнер для добычи Bitcoin.",
-            "price": "150000"
-          },
-          {
-            "name": "Antminer L7",
-            "image": "url_to_image_l7.jpg",
-            "description": "Майнер для добычи Litecoin и Dogecoin.",
-            "price": "120000"
-          }
-        ]
-      },
-      {
-        "name": "WhatsMiner",
-        "models": [
-          {
-            "name": "M30S++",
-            "image": "url_to_image_m30s++.jpg",
-            "description": "Надежный и производительный майнер.",
-            "price": "130000"
-          }
-        ]
-      }
-    ]
+[
+  {
+    "manufacturer": "Bitmain",
+    "model": "Antminer S19 Pro",
+    "image": "images/antminer-s19-pro.png",
+    "description": "Флагманский ASIC-майнер Bitmain для добычи Bitcoin. Высокая производительность и энергоэффективность.",
+    "price": "150000"
+  },
+  {
+    "manufacturer": "Bitmain",
+    "model": "Antminer L7",
+    "image": "images/antminer-l7.png",
+    "description": "Мощный майнер для добычи Litecoin и Dogecoin на алгоритме Scrypt.",
+    "price": "120000"
+  },
+  {
+    "manufacturer": "Innosilicon",
+    "model": "Innosilicon A11 Pro BTC",
+    "image": "images/innosilicon-a11-pro.png",
+    "description": "Высокопроизводительный ASIC-майнер Innosilicon для Bitcoin и других криптовалют на алгоритме SHA-256.",
+    "price": "180000"
+  },
+  {
+    "manufacturer": "WhatsMiner",
+    "model": "WhatsMiner M30S++",
+    "image": "images/whatsminer-m30s++.png",
+    "description": "Надежный и производительный ASIC-майнер от MicroBT. Отличный выбор для профессионального майнинга.",
+    "price": "130000"
+  },
+  {
+    "manufacturer": "Bitmain",
+    "model": "Antminer S19j Pro",
+    "image": "images/antminer-s19j-pro.png",
+    "description": "Энергоэффективный и мощный майнер, отличный выбор для крупных майнинг-ферм.",
+    "price": "160000"
+  },
+  {
+    "manufacturer": "Canaan",
+    "model": "AvalonMiner 1246",
+    "image": "images/avalonminer-1246.png",
+    "description": "Надежный и стабильный ASIC-майнер от Canaan, подходит для долгосрочной работы.",
+    "price": "110000"
+  },
+  {
+    "manufacturer": "MicroBT",
+    "model": "WhatsMiner M50",
+    "image": "images/whatsminer-m50.png",
+    "description": "Новейшая модель от WhatsMiner с улучшенной производительностью и энергоэффективностью.",
+    "price": "170000"
+  },
+  {
+    "manufacturer": "Innosilicon",
+    "model": "Innosilicon A10 Pro ETH",
+    "image": "images/innosilicon-a10-pro-eth.png",
+    "description": "Мощный майнер для добычи Ethereum на алгоритме Ethash. Высокая прибыльность.",
+    "price": "140000"
+  },
+  {
+    "manufacturer": "Bitmain",
+    "model": "Antminer S17+",
+    "image": "images/antminer-s17+.png",
+    "description": "Проверенный временем и надежный ASIC-майнер, все еще актуальный для майнинга Bitcoin.",
+    "price": "90000"
+  },
+  {
+    "manufacturer": "WhatsMiner",
+    "model": "WhatsMiner M31S+",
+    "image": "images/whatsminer-m31s+.png",
+    "description": "Экономичный и эффективный майнер для тех, кто ценит баланс цены и производительности.",
+    "price": "115000"
+  },
+  {
+    "manufacturer": "Canaan",
+    "model": "AvalonMiner 1166 Pro",
+    "image": "images/avalonminer-1166-pro.png",
+    "description": "Энергоэффективный майнер от Canaan с хорошим соотношением хешрейта и потребления энергии.",
+    "price": "105000"
+  },
+  {
+    "manufacturer": "MicroBT",
+    "model": "WhatsMiner M32",
+    "image": "images/whatsminer-m32.png",
+    "description": "Компактный и мощный майнер, подходящий для размещения в различных условиях.",
+    "price": "125000"
+  },
+  {
+    "manufacturer": "Innosilicon",
+    "model": "Innosilicon T2T-40T",
+    "image": "images/innosilicon-t2t-40t.png",
+    "description": "Надежный ASIC-майнер от Innosilicon для добычи Bitcoin, проверенный временем.",
+    "price": "85000"
+  },
+  {
+    "manufacturer": "Bitmain",
+    "model": "Antminer T19",
+    "image": "images/antminer-t19.png",
+    "description": "Мощный и производительный майнер серии Antminer T19 для добычи Bitcoin.",
+    "price": "145000"
+  },
+  {
+    "manufacturer": "WhatsMiner",
+    "model": "WhatsMiner M21S",
+    "image": "images/whatsminer-m21s.png",
+    "description": "Популярная модель WhatsMiner M21S, обеспечивающая стабильный хешрейт.",
+    "price": "95000"
+  },
+  {
+    "manufacturer": "Jasminer",
+    "model": "Jasminer X4 High-throughput",
+    "image": "images/jasminer-x4-high.png",
+    "description": "ASIC-майнер Jasminer X4 High-throughput для добычи Ethereum Classic с высокой пропускной способностью.",
+    "price": "220000"
+  },
+  {
+    "manufacturer": "Goldshell",
+    "model": "Goldshell KD5",
+    "image": "images/goldshell-kd5.png",
+    "description": "ASIC-майнер Goldshell KD5 для добычи Kadena (KDA) с высокой эффективностью.",
+    "price": "250000"
+  },
+  {
+    "manufacturer": "Bitmain",
+    "model": "Antminer S19 XP",
+    "image": "images/antminer-s19xp.png",
+    "description": "Antminer S19 XP -  одна из самых современных и мощных моделей от Bitmain на сегодняшний день.",
+    "price": "280000"
+  },
+  {
+    "manufacturer": "WhatsMiner",
+    "model": "WhatsMiner M53",
+    "image": "images/whatsminer-m53.png",
+    "description": "WhatsMiner M53 -  передовой майнер от MicroBT, обеспечивающий высокую производительность и надежность.",
+    "price": "260000"
+  },
+  {
+    "manufacturer": "Innosilicon",
+    "model": "Innosilicon A12++",
+    "image": "images/innosilicon-a12++.png",
+    "description": "Innosilicon A12++ -  мощный и эффективный ASIC-майнер для майнинга Bitcoin с улучшенными характеристиками.",
+    "price": "290000"
+  },
+  {
+    "manufacturer": "Canaan",
+    "model": "AvalonMiner 1466 Pro",
+    "image": "images/avalonminer-1466-pro.png",
+    "description": "AvalonMiner 1466 Pro от Canaan - это высокопроизводительное решение для майнинга Bitcoin.",
+    "price": "230000"
+  },
+  {
+    "manufacturer": "MicroBT",
+    "model": "WhatsMiner M56S++",
+    "image": "images/whatsminer-m56s++.png",
+    "description": "WhatsMiner M56S++  -  одна из самых передовых моделей в линейке WhatsMiner, обеспечивающая максимальную производительность.",
+    "price": "300000"
+  },
+  {
+    "manufacturer": "Bitfily",
+    "model": "Bitfily Snow Leopard A1",
+    "image": "images/bitfily-snow-leopard-a1.png",
+    "description": "Bitfily Snow Leopard A1 -  ASIC-майнер, отличающийся высокой производительностью и стабильностью работы.",
+    "price": "210000"
+  },
+  {
+    "manufacturer": "Goldshell",
+    "model": "Goldshell HS5",
+    "image": "images/goldshell-hs5.png",
+    "description": "Goldshell HS5 -  эффективный майнер для Handshake (HNS) и других криптовалют на алгоритме Blake2B-Sia.",
+    "price": "190000"
+  },
+  {
+    "manufacturer": "StrongU",
+    "model": "StrongU STU-U1++",
+    "image": "images/strongu-stu-u1++.png",
+    "description": "StrongU STU-U1++ -  мощный ASIC-майнер для добычи криптовалют на алгоритме X11.",
+    "price": "240000"
   }
+]
