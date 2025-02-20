@@ -14,7 +14,33 @@ function addToCart(product) {
     localStorage.setItem('shoppingCart', JSON.stringify(cart)); // Преобразуем массив cart в JSON-строку и сохраняем в localStorage под ключом 'shoppingCart'
 
     // 4. Обновляем отображение счетчика корзины на странице.
-    displayCartCount(); // Вызываем функцию displayCartCount(), чтобы обновить счетчик корзины
+    displayCartCount(cart); // Вызываем функцию displayCartCount(), чтобы обновить счетчик корзины
+}
+
+// Функция для удаления товара из корзины
+function removeFromCart(product) {
+    console.log('Товар удален из корзины:', product); // Выводим сообщение в консоль
+
+    // 1. Получаем текущую корзину.
+    const cart = getCart();
+
+    // 2. Находим индекс товара, который нужно удалить, в массиве корзины.
+    const productIndex = cart.findIndex(item => item.name === product.name); // Ищем индекс товара по имени
+
+    // 3. Если товар найден в корзине (индекс не равен -1).
+    if (productIndex !== -1) {
+        // 4. Удаляем товар из массива корзины, используя метод splice().
+        cart.splice(productIndex, 1); // Удаляем 1 элемент по найденному индексу
+        console.log('Товар удален из массива корзины. Обновленная корзина:', cart); // Выводим обновленную корзину в консоль
+
+        // 5. Сохраняем обновленную корзину в localStorage.
+        localStorage.setItem('shoppingCart', JSON.stringify(cart));
+
+        // 6. Обновляем отображение счетчика корзины.
+        displayCartCount(cart); // Вызываем displayCartCount() и передаем обновленную корзину
+    } else {
+        console.log('Товар не найден в корзине для удаления:', product); // Сообщение, если товар не найден в корзине
+    }
 }
 
 
@@ -36,18 +62,18 @@ function getCart() {
 }
 
 // Функция для отображения количества товаров в корзине (например, на значке корзины)
-function displayCartCount() {
+function displayCartCount(cart) { // <---  Теперь функция принимает аргумент 'cart'
     const cartCount = getCart().length;
-    console.log('В корзине товаров:', cartCount); // Оставляем это сообщение
+    console.log('В корзине товаров:', cartCount);
 
-    console.log('Функция displayCartCount() вызвана. Количество товаров в корзине:', cartCount); // <----  ДОБАВЛЯЕМ ЭТО СООБЩЕНИЕ
+    // **Временно выводим массив cart в консоль, чтобы убедиться, что данные корзины передаются**
+    console.log('Содержимое корзины (передано в displayCartCount):', cart); // <---  ДОБАВЛЕНА ЭТА СТРОКА
 
     const cartCountElement = document.getElementById('cart-count');
 
     if (cartCountElement) {
-        console.log('Элемент счетчика найден:', cartCountElement); // <----  ДОБАВЛЯЕМ ЭТО СООБЩЕНИЕ
         cartCountElement.textContent = cartCount;
-        console.log('Текст счетчика обновлен на:', cartCount); // <----  ДОБАВЛЯЕМ ЭТО СООБЩЕНИЕ
+        console.log('Текст счетчика обновлен на:', cartCount);
     } else {
         console.error('Элемент счетчика корзины не найден на странице!');
     }
