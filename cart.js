@@ -37,9 +37,20 @@ function getCart() {
 
 // Функция для отображения количества товаров в корзине (например, на значке корзины)
 function displayCartCount() {
-    const cartCount = getCart().length; // Получаем количество товаров в корзине
-    console.log('В корзине товаров:', cartCount); // Временно выводим количество в консоль
-    // *** Здесь будет логика обновления визуального отображения количества товаров в корзине ***
+    const cartCount = getCart().length;
+    console.log('В корзине товаров:', cartCount); // Оставляем это сообщение
+
+    console.log('Функция displayCartCount() вызвана. Количество товаров в корзине:', cartCount); // <----  ДОБАВЛЯЕМ ЭТО СООБЩЕНИЕ
+
+    const cartCountElement = document.getElementById('cart-count');
+
+    if (cartCountElement) {
+        console.log('Элемент счетчика найден:', cartCountElement); // <----  ДОБАВЛЯЕМ ЭТО СООБЩЕНИЕ
+        cartCountElement.textContent = cartCount;
+        console.log('Текст счетчика обновлен на:', cartCount); // <----  ДОБАВЛЯЕМ ЭТО СООБЩЕНИЕ
+    } else {
+        console.error('Элемент счетчика корзины не найден на странице!');
+    }
 }
 
 // ***  Временный вызов displayCartCount для проверки (можно убрать потом) ***
