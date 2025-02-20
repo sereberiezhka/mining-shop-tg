@@ -109,7 +109,6 @@ h1 {
 }
 
 .back-button span::before {
-    content: "<";
     display: inline-block;
     margin-right: 6px;
     color: #777; /* Более светлый цвет стрелочки "Назад" */
