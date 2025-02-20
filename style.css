@@ -238,4 +238,47 @@ h1 {
     border-radius: 5px;
 }
 
-/* ... (можно добавить стили для #cart-total, #checkout-button, и т.д. позже) ... */
+/* Стили для карточки товара в корзине на странице cart.html */
+.cart-item {
+    display: flex; /* Используем flexbox для карточки товара */
+    align-items: center; /* Выравнивание по вертикали по центру */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.cart-item-image {
+    width: 100px; /* Размер изображения товара в корзине */
+    height: auto;
+    margin-right: 15px; /* Отступ справа от изображения */
+}
+
+.cart-item-details {
+    flex-grow: 1; /* Занимает все доступное место справа от изображения */
+}
+
+.cart-item-details h4 {
+    margin-top: 0;
+    margin-bottom: 5px; /* Отступ снизу для названия товара */
+    font-size: 18px;
+}
+
+.cart-item-details p {
+    margin: 0; /* Убираем отступы для цены товара */
+    font-size: 16px;
+    color: #777; /* Цвет цены товара */
+}
+
+.remove-from-cart-button {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.remove-from-cart-button:hover {
+    background-color: #e0e0e0; /* Цвет фона при наведении курсора */
+}
