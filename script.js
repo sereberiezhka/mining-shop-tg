@@ -15,36 +15,15 @@ async function loadManufacturers() {
         manufacturersFilterDiv.appendChild(manufacturerButton);
     });
 }
-
 function displayModels(models) {
-    const modelsListDiv = document.getElementById('models-list');
-    modelsListDiv.innerHTML = '';
-
-    models.forEach(model => {
-        const modelCard = document.createElement('div');
-        modelCard.classList.add('model-card');
-
-        if (model.image) {
-            const modelImage = document.createElement('img');
-            modelImage.src = model.image;
-            modelImage.alt = model.name;
-            modelCard.appendChild(modelImage);
-        }
-
-        const modelName = document.createElement('h3');
-        modelName.textContent = model.name;
-        modelCard.appendChild(modelName);
-
-        const modelDescription = document.createElement('p');
-        modelDescription.textContent = model.description;
-        modelCard.appendChild(modelDescription);
-
-        const modelPrice = document.createElement('p');
-        modelPrice.textContent = `Цена: ${model.price} руб.`;
-        modelCard.appendChild(modelPrice);
-
-        modelsListDiv.appendChild(modelCard);
-    });
+        const modelsListDiv = document.getElementById('models-list');
+        modelsListDiv.innerHTML = '';
+    
+        models.forEach(model => {
+            // **ИСПОЛЬЗУЕМ createModelCard() ЗДЕСЬ, чтобы создать карточку товара, включая кнопку!**
+            const modelCard = createModelCard(model, "Производитель"); // Вызываем createModelCard() !
+            modelsListDiv.appendChild(modelCard); // Добавляем созданную карточку в список
+        });
 }
 
 function createModelCard(model, manufacturerName) {
